@@ -10,13 +10,33 @@ export interface IFilmList extends IFilm{
 }
 
 export interface IFilmAPI {
-    [id: string]: IFilm[];
+    id: number;
+    name: string;
+    summary: string;
+    image?: {
+        medium: string;
+    };
+    genres: string[];
+    status: string;
+    premiered: string;
+    rating: {
+        average: number;
+    };
 }
 
 export interface Show {
     show: {
         id: number;
         name: string;
-        url: string;
+        summary: string;
+        image?: {
+            medium: string;
+        };
+        genres: string[];
+        status: string;
+        premiered: string;
+        rating: {
+            average: number;
+        };
     };
 }

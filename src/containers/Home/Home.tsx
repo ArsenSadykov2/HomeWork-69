@@ -4,9 +4,6 @@ const Home = () => {
     return (
         <div>
             <header><ToolBar/></header>
-            <main className="conteiner">
-                <div></div>
-            </main>
         </div>
     );
 };
