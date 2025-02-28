@@ -4,10 +4,19 @@ export interface IFilm {
     description: string;
 }
 
-export interface IFilmInput {
-    name: string;
+export interface IFilmList extends IFilm{
+   id: string;
+   items: IFilm;
 }
 
 export interface IFilmAPI {
     [id: string]: IFilm[];
+}
+
+export interface Show {
+    show: {
+        id: number;
+        name: string;
+        url: string;
+    };
 }

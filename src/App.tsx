@@ -1,15 +1,12 @@
 import './App.css'
 import Home from "./containers/Home/Home.tsx";
 
-function App() {
-
-  return (
+const App = () => (
     <>
-      <div className="container">
-        <Home/>
-      </div>
+        <div className="container">
+            <Home/>
+        </div>
     </>
-  )
-}
+);
 
 export default App
